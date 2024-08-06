@@ -1,7 +1,16 @@
-.done {
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.item.done {
   text-decoration: line-through;
 }
 
-.done span {
+.item>:is(span, input) {
+  cursor: pointer;
+}
+
+.item.done span {
   opacity: .5;
 }
