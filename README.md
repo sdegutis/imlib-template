@@ -1,1 +1,1 @@
-Template repo for [sdegutis/imlib]()
+Template repo for [sdegutis/imlib](sdegutis/imlib)
