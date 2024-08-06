@@ -20,7 +20,7 @@ export function TodoList() {
     <div class='actions'>
       <Counter list={list} />
       <ActionButton onclick={() => list.clearDone()}>Clear done</ActionButton>
-      <ActionButton onclick={() => list.invertAll()}>Invert all</ActionButton>
+      <ActionButton onclick={() => list.invertAll()}><i>Invert</i> all</ActionButton>
     </div>
     {list.ul}
   </>;
