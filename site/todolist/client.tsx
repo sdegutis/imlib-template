@@ -1,5 +1,5 @@
-import { Css } from "./components/css.js";
-import { TodoList } from "./todolist/todolist.js";
+import { Css } from "../components/css.js";
+import { TodoList } from "./todolist.js";
 
 document.getElementById('todo-root')!.replaceChildren(<>
   <Css src="./todolist.css" />

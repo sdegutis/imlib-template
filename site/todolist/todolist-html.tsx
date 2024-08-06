@@ -3,6 +3,6 @@ export function TodoListContainer() {
     <div id='todo-root'>
       Loading...
     </div>
-    <script type='module' src='./todolist-client.js' />
+    <script type='module' src='./todolist/client.js' />
   </>;
 }

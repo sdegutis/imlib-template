@@ -1,5 +1,5 @@
 import { Css } from "./components/css.js";
-import { TodoListContainer } from "./todolist-html.js";
+import { TodoListContainer } from "./todolist/todolist-html.js";
 
 export default <>
   {`<!DOCTYPE html>`}
