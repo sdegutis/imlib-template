@@ -1,0 +1,14 @@
+body {
+  background-color: #123;
+  color: #def;
+  font-family: system-ui;
+}
+
+#site-root {
+  width: 30em;
+  margin: 3em auto;
+}
+
+a {
+  color: orange;
+}

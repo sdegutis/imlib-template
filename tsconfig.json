@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "jsx": "react-native",
+    "target": "ESNext",
+    "noEmit": true,
+    "rootDir": "site",
+    "allowSyntheticDefaultImports": false,
+    "types": [
+      "node",
+      "@imlib/core/runtime.d.ts"
+    ],
+    "moduleResolution": "Node",
+    "module": "ES2022",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "downlevelIteration": true,
+    "exactOptionalPropertyTypes": true,
+    "esModuleInterop": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "skipLibCheck": true,
+  },
+}
