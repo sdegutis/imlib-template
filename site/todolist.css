@@ -1,13 +1,3 @@
-input {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-input:not(.output) {
-  color: blue;
-}
-
-.output {
-  color: green;
-  font-weight: bold;
+.done {
+  text-decoration: line-through;
 }

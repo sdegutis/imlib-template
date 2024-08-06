@@ -1,6 +1,6 @@
 body {
-  background-color: #1f1f1f;
-  color: #cccccc;
+  background-color: #22272e;
+  color: #c5d1de;
   font-family: system-ui;
 }
 
@@ -10,5 +10,6 @@ body {
 }
 
 a {
-  color: #569CD6;
+  color: #478be6;
+  text-underline-offset: 3px;
 }
