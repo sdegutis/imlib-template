@@ -1,4 +1,4 @@
-export function TodoListContainer() {
+export function TodoList() {
   return <>
     <div id='todo-root'>
       Loading...
