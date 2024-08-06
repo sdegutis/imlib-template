@@ -1,6 +1,6 @@
 body {
-  background-color: #123;
-  color: #def;
+  background-color: #1f1f1f;
+  color: #cccccc;
   font-family: system-ui;
 }
 
@@ -10,5 +10,5 @@ body {
 }
 
 a {
-  color: orange;
+  color: #569CD6;
 }
