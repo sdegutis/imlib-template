@@ -5,9 +5,9 @@ export function TodoList() {
 
   list.add('foo');
   list.add('bar').toggle();
-  list.add('qix');
+  list.add('qux');
 
-  const input = <input autofocus /> as HTMLInputElement;
+  const input = <input class='next' autofocus /> as HTMLInputElement;
   input.onkeydown = (e) => {
     if (e.key === 'Enter') {
       list.add(input.value)
@@ -25,10 +25,11 @@ export function TodoList() {
 
   return <>
     <div>{input}</div>
-    {list.ul}
-    <div>
+    <div class='actions'>
       {numberDone}
-      <button onclick={() => list.clearDone()}>Clear done</button>
+      <a href='#' onclick={(e: Event) => { e.preventDefault(); list.clearDone() }}>Clear done</a>
+      <a href='#' onclick={(e: Event) => { e.preventDefault(); list.invertAll() }}>Invert all</a>
     </div>
+    {list.ul}
   </>;
 }

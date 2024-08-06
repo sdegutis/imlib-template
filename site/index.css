@@ -5,8 +5,15 @@ body {
 }
 
 #site-root {
-  width: 30em;
+  width: 40em;
   margin: 3em auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#site-root>div {
+  flex: 1 0 auto;
 }
 
 a {

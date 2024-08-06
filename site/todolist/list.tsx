@@ -2,7 +2,7 @@ import { Item } from "./item.js";
 
 export class List {
 
-  ul = <ul /> as HTMLUListElement;
+  ul = <ul class='list' /> as HTMLUListElement;
   items: Item[] = [];
 
   onchange?: () => void;
@@ -22,6 +22,10 @@ export class List {
 
   clearDone() {
     this.doneItems().forEach(it => it.remove());
+  }
+
+  invertAll() {
+    this.items.forEach(it => it.toggle());
   }
 
   doneItems() {

@@ -12,7 +12,7 @@ export class Item {
       <li class='item'>
         {this.checkbox}
         <span onclick={() => this.toggle()}>{text}</span>
-        <button class='close' onclick={() => this.remove()}>✖</button>
+        <button class='close' onclick={() => this.remove()}>✕</button>
       </li> as HTMLLIElement
     ),
   ) {

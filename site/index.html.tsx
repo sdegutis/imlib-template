@@ -12,11 +12,14 @@ export default <>
     <body>
       <div id='site-root'>
         <Css src="./index.css" />
-        <h1>Hello world!</h1>
-        <p>This app runs on <a href='https://github.com/sdegutis/imlib'>imlib</a></p>
-        <p>Clone <a href='https://github.com/sdegutis/imlib-template'>this template repo</a></p>
-        <p>The canonical example:</p>
-        <TodoListContainer />
+        <div>
+          <h1>Hello world!</h1>
+          <p>This app runs on <a href='https://github.com/sdegutis/imlib'>imlib</a>.</p>
+          <p>Clone <a href='https://github.com/sdegutis/imlib-template'>this template repo</a>.</p>
+        </div>
+        <div>
+          <TodoListContainer />
+        </div>
       </div>
     </body>
   </html>
