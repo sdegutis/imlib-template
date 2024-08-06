@@ -1,3 +1,4 @@
+import { PostsList } from "./blog/posts-list.js";
 import { Css } from "./components/css.js";
 import { Html } from "./components/html.js";
 import { TodoList } from "./todolist/container.js";
@@ -12,6 +13,7 @@ export default (
         <h1>{title}</h1>
         <p>This app runs on <a href='https://github.com/sdegutis/imlib'>imlib</a>.</p>
         <p>Clone <a href='https://github.com/sdegutis/imlib-template'>this template repo</a>.</p>
+        <PostsList />
       </div>
       <div>
         <TodoList />

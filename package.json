@@ -19,10 +19,12 @@
   },
   "homepage": "https://github.com/sdegutis/imlib-template#readme",
   "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
     "@types/node": "^20.14.13",
     "typescript": "^5.5.2"
   },
   "dependencies": {
-    "@imlib/core": "^2.3.2"
+    "@imlib/core": "^2.3.2",
+    "markdown-it": "^14.1.0"
   }
 }
