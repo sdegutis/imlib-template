@@ -51,7 +51,8 @@ button:active {
 }
 
 .item.done span {
-  text-decoration: line-through;
+  text-decoration: line-through #f007 7px;
+
 }
 
 .item>:is(span, input) {
