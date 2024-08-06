@@ -28,6 +28,7 @@ export class Item {
     this.done = !this.done;
     this.li.classList.toggle('done', this.done);
     this.checkbox.checked = this.done;
+    this.list.itemChanged();
   }
 
 }

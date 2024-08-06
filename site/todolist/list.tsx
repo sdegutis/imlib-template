@@ -3,26 +3,33 @@ import { Item } from "./item.js";
 export class List {
 
   ul = <ul /> as HTMLUListElement;
-  #items = new Set<Item>();
+  items: Item[] = [];
+
+  onchange?: () => void;
 
   add(text: string) {
     const item = new Item(this, text);
-    this.#items.add(item);
+    this.items.push(item);
     this.ul.append(item.li);
+    this.onchange?.();
     return item;
   }
 
   rem(item: Item) {
-    this.#items.delete(item);
+    this.items = this.items.filter(it => it !== item);
+    this.onchange?.();
   }
 
   clearDone() {
-    console.log('uhh')
-    for (const item of this.#items) {
-      if (item.done) {
-        item.remove();
-      }
-    }
+    this.doneItems().forEach(it => it.remove());
+  }
+
+  doneItems() {
+    return this.items.filter(it => it.done);
+  }
+
+  itemChanged() {
+    this.onchange?.();
   }
 
 }
