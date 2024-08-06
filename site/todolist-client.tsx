@@ -1,14 +1,14 @@
 import { Css } from "./components/css.js";
 
-document.getElementById('uppercaser-root')!.replaceChildren(<>
-  <Css src="./uppercaser.css" />
+document.getElementById('todo-root')!.replaceChildren(<>
+  <Css src="./todolist.css" />
   <fieldset>
-    <legend>Uppercaser</legend>
-    <Uppercaser />
+    <legend>Todo List</legend>
+    <TodoList />
   </fieldset>
 </>);
 
-function Uppercaser() {
+function TodoList() {
   const input = <input autofocus /> as HTMLInputElement;
   const output = <input class='output' /> as HTMLInputElement;
 

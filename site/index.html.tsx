@@ -1,5 +1,5 @@
 import { Css } from "./components/css.js";
-import { Uppercaser } from "./uppercaser.js";
+import { TodoListContainer } from "./todolist-html.js";
 
 export default <>
   {`<!DOCTYPE html>`}
@@ -15,8 +15,8 @@ export default <>
         <h1>Hello world!</h1>
         <p>This app runs on <a href='https://github.com/sdegutis/imlib'>imlib</a></p>
         <p>Clone <a href='https://github.com/sdegutis/imlib-template'>this template repo</a></p>
-        <p>Here's a little dynamic script for fun:</p>
-        <Uppercaser />
+        <p>Here's the canonical todo-list example:</p>
+        <TodoListContainer />
       </div>
     </body>
   </html>
