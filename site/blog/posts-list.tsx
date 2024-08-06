@@ -1,4 +1,4 @@
-import { posts } from './posts.js';
+import { posts } from './model.js';
 
 export function PostsList() {
   return <>

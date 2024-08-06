@@ -1,7 +1,7 @@
 import { Css } from '../components/css.js';
 import { Html } from '../components/html.js';
+import { posts } from './model.js';
 import { PostsList } from './posts-list.js';
-import { posts } from './posts.js';
 
 export default posts.map(post => {
   return [post.slug, <Html title={post.title}>
