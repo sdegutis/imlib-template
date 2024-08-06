@@ -9,7 +9,8 @@ class Item {
     public text: string,
     public li = (
       <li onclick={() => this.toggle()}>
-        {text} <button onclick={() => this.remove()}>Delete</button>
+        <span>{text}</span>
+        <button onclick={() => this.remove()}>✖</button>
       </li> as HTMLLIElement
     ),
   ) { }
@@ -34,6 +35,7 @@ class List {
   add(text: string) {
     const item = new Item(this, text);
     this.#items.add(item);
+    this.ul.append(item.li);
     return item;
   }
 
@@ -55,10 +57,14 @@ class List {
 function TodoList() {
   const list = new List();
 
+  list.add('foo');
+  list.add('bar').toggle();
+  list.add('qix');
+
   const input = <input autofocus /> as HTMLInputElement;
   input.onkeydown = (e) => {
     if (e.key === 'Enter') {
-      list.ul.append((list.add(input.value.trim())).li);
+      list.add(input.value)
       input.value = '';
     }
   };

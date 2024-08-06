@@ -1,3 +1,7 @@
 .done {
   text-decoration: line-through;
 }
+
+.done span {
+  opacity: .5;
+}
