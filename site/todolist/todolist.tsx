@@ -9,7 +9,7 @@ export function TodoList() {
 
   const input = <input class='next' autofocus /> as HTMLInputElement;
   input.onkeydown = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === 'Enter' && input.value.trim().length > 0) {
       list.add(input.value)
       input.value = '';
     }
