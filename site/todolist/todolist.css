@@ -12,6 +12,7 @@ input {
   outline: 1px solid #2d343c;
   padding: 0.5em;
   font-family: inherit;
+  border-radius: 3px;
 }
 
 button {
@@ -51,7 +52,7 @@ button:active {
 }
 
 .item.done span {
-  text-decoration: line-through #f007 7px;
+  text-decoration: line-through #f00c 7px;
 
 }
 
@@ -76,4 +77,8 @@ button:active {
   font-size: small;
   display: flex;
   justify-content: space-between;
+}
+
+.actions a.action-button:not(:hover) {
+  text-decoration: none;
 }

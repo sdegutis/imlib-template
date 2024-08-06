@@ -42,7 +42,7 @@ function Counter({ list }: { list: List }) {
 function ActionButton(attrs: { onclick: () => void }, children: any) {
   return <a
     href='#'
-    style='text-decoration:none'
+    class='action-button'
     onclick={(e: Event) => {
       e.preventDefault();
       attrs.onclick();
