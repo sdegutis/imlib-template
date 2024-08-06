@@ -7,7 +7,8 @@ export default posts.map(post => {
   return [post.slug, <Html title={post.title}>
     <div id='site-root'>
       <div>
-        <PostsList />
+        <a href='../'>Home page</a>
+        {/* <PostsList /> */}
       </div>
       <div>
         <Css src="../index.css" />
