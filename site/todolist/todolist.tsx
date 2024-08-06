@@ -19,8 +19,8 @@ export function TodoList() {
     <div>{input}</div>
     <div class='actions'>
       <Counter list={list} />
-      <a href='#' onclick={(e: Event) => { e.preventDefault(); list.clearDone() }}>Clear done</a>
-      <a href='#' onclick={(e: Event) => { e.preventDefault(); list.invertAll() }}>Invert all</a>
+      <ActionButton onclick={() => list.clearDone()}>Clear done</ActionButton>
+      <ActionButton onclick={() => list.invertAll()}>Invert all</ActionButton>
     </div>
     {list.ul}
   </>;
@@ -37,4 +37,15 @@ function Counter({ list }: { list: List }) {
   list.onchange = updateText;
 
   return span;
+}
+
+function ActionButton(attrs: { onclick: () => void }, children: any) {
+  return <a
+    href='#'
+    style='font-weight:bold'
+    onclick={(e: Event) => {
+      e.preventDefault();
+      attrs.onclick();
+    }}
+  >{children}</a>;
 }
