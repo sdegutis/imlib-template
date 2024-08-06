@@ -1,6 +1,6 @@
 {
   "name": "imlib-template",
-  "version": "2.0.0",
+  "version": "0.0.1",
   "description": "My website.",
   "main": "out/main.js",
   "scripts": {
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sdegutis/imlib-template.com.git"
+    "url": "git+https://github.com/sdegutis/imlib-template.git"
   },
   "keywords": [],
   "author": "",
   "license": "",
   "bugs": {
-    "url": "https://github.com/sdegutis/imlib-template.com/issues"
+    "url": "https://github.com/sdegutis/imlib-template/issues"
   },
-  "homepage": "https://github.com/sdegutis/imlib-template.com#readme",
+  "homepage": "https://github.com/sdegutis/imlib-template#readme",
   "devDependencies": {
     "@types/node": "^20.14.13",
     "typescript": "^5.5.2"

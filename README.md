@@ -1,1 +1,1 @@
-Made with [sdegutis/imlib]()
+Template repo for [sdegutis/imlib]()

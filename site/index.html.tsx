@@ -14,6 +14,7 @@ export default <>
         <Css src="./index.css" />
         <h1>Hello world!</h1>
         <p>This app runs on <a href='https://github.com/sdegutis/imlib'>imlib</a></p>
+        <p>Clone <a href='https://github.com/sdegutis/imlib-template'>this template repo</a></p>
         <p>Here's a little dynamic script for fun:</p>
         <Uppercaser />
       </div>
