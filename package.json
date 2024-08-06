@@ -23,6 +23,6 @@
     "typescript": "^5.5.2"
   },
   "dependencies": {
-    "@imlib/core": "^2.3.1"
+    "@imlib/core": "^2.3.2"
   }
 }
