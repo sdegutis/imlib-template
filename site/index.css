@@ -5,15 +5,18 @@ body {
 }
 
 #site-root {
-  width: 40em;
+  max-width: 40em;
   margin: 3em auto;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 #site-root>div {
   flex: 1 0 auto;
+  min-width: 15em;
+  max-width: 20em;
 }
 
 a {
