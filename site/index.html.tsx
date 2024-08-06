@@ -1,6 +1,6 @@
 import { Css } from "./components/css.js";
 import { Html } from "./components/html.js";
-import { TodoList } from "./todolist/placeholder.js";
+import { TodoList } from "./todolist/container.js";
 
 const title = "Hello world!";
 
